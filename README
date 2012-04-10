@@ -1,1 +1,14 @@
 this Class will help you to deal with AMFPHP Connection
+//
+example : 
+var serviceCaller:ServiceCaller = new ServiceCaller(gateway);
+
+serviceCaller.callMethod("Service/method",params,callback)//amfphp 2.0
+//serviceCaller.callMethod("Service.method",params,callback)//amfphp 1.9
+
+function callback(msg:String, result:Object):void
+{
+
+//result object
+
+}
