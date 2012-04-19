@@ -22,6 +22,8 @@ class ServiceName{
 		$firstParam = $data->firstParam;
 		$secondParam =$data->secondParam;
 		//do some stuff
+
+		return $something
 	}
 }
 
