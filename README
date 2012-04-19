@@ -1,10 +1,9 @@
 this Class will help you to deal with AMFPHP Connection
-//
-example : 
+//example : 
 var serviceCaller:ServiceCaller = new ServiceCaller(gateway);
-
-serviceCaller.callMethod("Service/method",params,callback)//amfphp 2.0
-//serviceCaller.callMethod("Service.method",params,callback)//amfphp 1.9
+var params:Object = {firstParam:"Hello", secondParam:"World"};
+serviceCaller.callMethod("ServiceName/methodName",params,callback)//amfphp 2.0
+//serviceCaller.callMethod("ServiceName.methodName",params,callback)//amfphp 1.9
 
 function callback(msg:String, result:Object):void
 {
@@ -12,3 +11,19 @@ function callback(msg:String, result:Object):void
 //result object
 
 }
+
+//**********************************************************************************************
+// AMFPHP SIDE example 
+<?php
+class ServiceName{
+	
+	function methodName($data)
+	{
+		$firstParam = $data->firstParam;
+		$secondParam =$data->secondParam;
+		//do some stuff
+	}
+}
+
+
+?> 
