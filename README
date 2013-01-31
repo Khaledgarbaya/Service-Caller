@@ -1,9 +1,8 @@
-this Class will help you to deal with AMFPHP Connection
-//example : 
 #Service Caller 
-##A simple Class to communicate with amfphp
-Code Sample
------------
+##this Class will help you to deal with AMFPHP Connection
+
+Code Sample:
+------------
 var serviceCaller:ServiceCaller = new ServiceCaller(gateway);
 var params:Object = {firstParam:"Hello", secondParam:"World"};
 serviceCaller.callMethod("ServiceName/methodName",params,callback)//amfphp 2.0
