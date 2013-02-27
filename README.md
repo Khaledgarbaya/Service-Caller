@@ -16,22 +16,24 @@ Code Sample:
 	}
 
 //**********************************************************************************************
-// AMFPHP SIDE example 
-<?php
-class ServiceName{
-  
-	function methodName($data)
-	{
-		$firstParam = $data->firstParam;
-		$secondParam =$data->secondParam;
-		//do some stuff
-
-		return $something
+	
+	// AMFPHP SIDE example 
+	
+	<?php
+	class ServiceName{
+	  
+		function methodName($data)
+		{
+			$firstParam = $data->firstParam;
+			$secondParam =$data->secondParam;
+			//do some stuff
+	
+			return $something
+		}
 	}
-}
-
-
-?> 
+	
+	
+	?> 
 LICENSE
 -------
 Simplified BSD License
