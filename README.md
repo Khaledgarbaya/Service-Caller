@@ -3,17 +3,17 @@
 
 Code Sample:
 ------------
-var serviceCaller:ServiceCaller = new ServiceCaller(gateway);
-var params:Object = {firstParam:"Hello", secondParam:"World"};
-serviceCaller.callMethod("ServiceName/methodName",params,callback)//amfphp 2.0
-//serviceCaller.callMethod("ServiceName.methodName",params,callback)//amfphp 1.9
-
-function callback(msg:String, result:Object):void
-{
-
-//result object
-
-}
+	var serviceCaller:ServiceCaller = new ServiceCaller(gateway);
+	var params:Object = {firstParam:"Hello", secondParam:"World"};
+	serviceCaller.callMethod("ServiceName/methodName",params,callback)//amfphp 2.0
+	//serviceCaller.callMethod("ServiceName.methodName",params,callback)//amfphp 1.9
+	
+	function callback(msg:String, result:Object):void
+	{
+	
+	//result object
+	
+	}
 
 //**********************************************************************************************
 // AMFPHP SIDE example 
