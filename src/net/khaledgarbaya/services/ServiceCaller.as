@@ -19,9 +19,9 @@ package net.khaledgarbaya.services
 	{
 		/** @private gate way path (eg: http://localhost/amphp/gateway.php) **/
 		private var _gatewayPath:String;
-		/** @private Responder **/
+		/** @private **/
 		private var responder:Responder;
-		/** @private callBack function will be called when the communication done and show result **/
+		/** @private  **/
 		private var callBack:Function;
 		/** @private **/
 		private var netConnection:NetConnection;
@@ -34,7 +34,6 @@ package net.khaledgarbaya.services
 		{
 			this.gatewayPath = gatewayPath;
 			_initConnection();
-			//callBack = new Function();
 		}
 		/**
 		* callMethod call methode already defined in the Service created 
